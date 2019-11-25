@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Bilbo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Condiment' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="animated rollIn delay-4s" id="image_logo">
+        <img src="images/title2.png" alt="logo" width=200px height=220px>
+    </div>
+    <div id="fullpage">
+        <div class="section" id="section1">
+            <h1 class="animated zoomIn delay-2s" id="my-element">My portfolio</h1>
+            <div class="animated zoomIn delay-2s">
+                <span class="header__ul">
+                    <ul class="new_ul">
+                        <span><li class="new_li"><a class="active-home1" href="#secondPage">short bio</a></li></span>
+                        <span><li class="new_li"><a class="active1" href="#thirdPage" id="resume">exploration</a></li></span>
+                        <span><li class="new_li"><a class="active1" href="#fourthPage">team project</a></li></span>
+                        <span><li class="new_li"><a class="active1" href="#seventhPage">portfolio</a></li></span>
+                    </ul>
+                </span>
+            </div>
+        </div>
+        <div class="section fp-auto-height-responsive" id="section2">
+            <div class="card-body" id="card-body-fadein">
+                <div class="card-body__top">
+                    <span class="card-body__p"> 
+                        <p class="card-body__word-1"><b>Yaxin Yu</b></p>
+                        <p class="card-body__word-2">
+                            Deco 7180<br>
+                            45120486
+                        </p>
+                    </span>
+                    <div class="skill-bar">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 95%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">></div>
+                        </div>
+                        <p class="skill_font"><b>HTML</b></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">></div>
+                        </div>
+                        <p class="skill_font"><b>CSS</b></p>
+                   
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">></div>
+                        </div>
+                        <p class="skill_font"><b>JS</b></p>
+                       
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">></div>
+                        </div>
+                        <p class="skill_font"><b>PHP</b></p>
+                    </div>
+                    <img class="card-body__picture" src="images/photo.jpg" alt="photo" width=160 height=210/>
+                </div>
+                <div class="card-body__medium">
+                    <div class="card-body__medium-introduction">
+                        <span class="card-body__medium-about"><b>About</b></span>
+                        <span class="card-body__medium-me">Me</span>
+                        <div class="card-body__medium-paragraph">
+                                Hello, I am yaxin yu, a student of IT major. This is the second semester of my study of it. 
+                                I am very grateful to the web design course for letting me who knows nothing about web production can now make simple works. 
+                                Now I am proficient in html, css, js and jquery, and through the deco7180 learning,  have a certain understanding of the database, 
+                                API, JSON, and contact the new language of PHP.
+                        </div>
+                    </div>
+                    <span class="card-body__medium-information">
+                        <p><b>Age</b></p>
+                        <p><b>Residence</b></p>
+                        <p><b>Address</b></p>
+                        <p><b>e-mail</b></p>
+                        <p><b>Phone</b></p>
+                    </span>    
+                    <div class="card-body__medium-specific-information">
+                        <p>23</p>
+                        <p>Australia</p>
+                        <p>Moggill Road, Indooroopilly, Brisbane</p>
+                        <p><a class="email" href="mailto:yaxin.yu@uq.net.au">yaxin.yu@uq.net.au</a></p>
+                        <p>0402 768 767</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="row">
+                <div class="column">
+                    <img class="week2-journal" src="images/week2-journal.png" alt="week2-journal" width=300px height=400px>
+                    <div class="column-subordiante">
+                        <p class="section3-word">
+                            In the initial exploration of personal projects, I first learned about the concept of API, 
+                            and know that the task of this course is to show the database data interestingly and vividly. Hence, at that time, 
+                            I was going to make a website about the health and medical care of those people who lived in Queensland....
+                        </p>
+                        <div class="popup" onclick="myFunction()"><b>Read more!</b>
+                            <span class="popuptext" id="myPopup">
+                                The website I planned to design can automatically determine the health of the body based on the information entered by each person, such as working hours, 
+                                eating conditions, mood fluctuations and other conditions. The site assistant can also remind the user of the rest or what to eat every day, 
+                                providing useful recipes and lifestyle according to the individual's condition. And users can share their healthy life experiences in the website forum. 
+                                Secondly, it has online doctors to help users solve some small life problems and also share some medical common sense, such as what medicine can be eaten if users get cold.In addition, 
+                                most of the current medical treatments are queued through the telephone or on-site of each hospital. So I want to design a perfect website to integrate all the hospital's or clinic's detailed address, opening time, medical environment, 
+                                and direction of the main treatment, and recommend the best hospital for the patients to seek medical treatment so that they can know each hospital and make appointments to the hospital or the clinic that they want to go on only website.
+                                <br>Moreover,I planned to use the Queensland People's Health Indicators data, the registration data of various hospital clinics and other indicators of human health testing on other websites.
+                                And my website is aimed at all adults who lived in Queensland.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <img class="week2-journal" src="images/week-journal2.png" alt="week-journal2" width=300px height=400px>
+                   <div class="column-subordiante">
+                        <p class="section3-word-1">
+                            When I exchanged my initial thoughts with my teachers and classmates, I got a lot of feedback. 
+                            First, there are too many features in website design, and the audience goals are not clear. 
+                            Secondly, the function implementation is more difficult and the data is more difficult to obtain. Third, and most importantly.... 
+                        </p>
+                        <div class="popup" onclick="myFunction2()"><b>Read more!</b>
+                            <span class="popuptext" id="myPopup2">
+                                the task of the course is to make the webpage interact with the data of the database. 
+                                Although the design of this website uses the address of the hospital, which is the API data of the map, 
+                                it does not use a new way to display this data.
+                                Therefore, I want to retain only the basic function of finding the address of the hospital, 
+                                and on this basis, enhance the interactivity of the webpage.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <img class="week2-journal" src="images/poster.png" alt="poster" width=300px height=400px>
+                    <div class="column-subordiante">
+                        <p class="section3-word-2">
+                            My design theme is to find the hospital around you and we all know that seeing a doctor is closely related to everyone s life. 
+                            We often need to go to the hospital in time after a sudden emergency. If you know your illness and the hospital around you very well, 
+                            you can find the hospital in time to treat the disease without delay....
+                        </p>
+                        <div class="popup" onclick="myFunction3()"><b>Read more!</b>
+                            <span class="popuptext" id="myPopup3">
+                                In addition, after the user has found the right hospital and outpatient care at the prescribed time, I will design a pop-up window to inform the user about some of the protection.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section4">
+            <div class="wrap2">
+                <div class="slide" id="slide1">
+                    <div class="section4-picture">
+                        <div class="div-storyboard">
+                            <img class="stotyboard" src="images/story.png" alt="story" width=400px>
+                        </div>
+                        <div class="div-personal">
+                            <img class="personal" src="images/personal.png" alt="personal" width=400px>
+                        </div>
+                    </div>
+                    <div class="personal-contribution">
+                        <p class="Part-A">Part A</p>
+                        <p class="contribution-title"><b>About</b></p>
+                        <p class="contribution-title-2" > 
+                            <b>Personal Contribution</b>
+                        </p>
+                        <p class="personal-content">
+                            There are four people in our team10 team, each of whom has their own unique exploration, 
+                            so everyone has their own ideas about the project. Initially, I suggested that we could do my personal project, 
+                            but their suggestion is that using the map's API and data is too generic and not too interactive with the user. 
+                            Later, in the constant search for the state library of queensland data and constant discussion, 
+                            we decided to make a strategy game about the history of World War I and the portrait of soldiers. 
+                            In the partA section, we mainly completed the report and a pitch. In the report, I am mainly responsible for the design concept section,
+                            which describes the design concept of the web page, the audience, the character prototype and the storyboard, and explains what data we need to use. 
+                            In the partA section, Our web page will combine the answer mode and World War I history, and refer the SLQ-World War I soldier portrait, 
+                            the Australian War Memorial as well as the Pinterest data.
+                            At this time,the audience of our webpages are mainly middle school students and teenagers, 
+                            because I think online games are very popular among young people at that age, and it has become another tool for many young people to explore the world. 
+                            Combining online games with learning not only enhances students' abilities but also allows them to apply this knowledge and strengthen their knowledge in real life. 
+                            In the production of the character prototype and the storyboard, I used xtensio and storyboardThat respectively, 
+                            and the character prototype at that time and the protagonist in the storyboard were both middle school students. 
+                            For the team presentation part, I mainly introduced the whole mechanism of our game in the pitch.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="slide1">
+                <div class="wrap2">
+                    <div class="section4-picture1">
+                        <div class="div-personal1">
+                            <img class="personal1" src="images/world-coffee.jpg" alt="personal" width=400px>
+                        </div>
+                        <div class="div-storyboard1">
+                            <img class="storyboard1" src="images/coffee2.jpg" alt="story>" width=400px>
+                        </div>
+                    </div>
+                    <div class="personal-contribution1">
+                        <p class="Part-A1">Part A</p>
+                        <p class="contribution-title1"><b>About</b></p>
+                        <p class="contribution-title-2-1" > 
+                            <b>Reflection</b>
+                        </p>
+                        <p class="personal-content1">
+                            For the part A part, I think that what I learned in the world coffee on the contact helped me a lot. 
+                            In the beginning, I did not form a preliminary concept for our project, and I don't know what the specific direction is.
+                            In the World Cafe, tutor classifies each person's posters and let three students from one table to discuss different topics, 
+                            such as the audience of the theme, the degree of feasibility of the topic as well as the pain points. At the same time, 
+                            each student at the table will rotate and communicate with different students to understand the different views of each student and choose one theme of their project they want to do with their team. 
+                            I think the biggest advantage of this method is not only to understand the idea of each person's poster, but also to explore different topics with different students to deepen our understanding of each topic. 
+                            After attending the World Cafe, I found that most of the classmates and groups wanted to use the game's model to showcase their group's data. I think this is a very good idea, 
+                            because a cool game can enhance the interaction with the user, bring a bright spot to the website, and let the user be willing to understand your web page. So I told the group that we can also combine games and data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section5">
+            <div class="wrap2">
+                <div class="slide" id="section5-slide1"> 
+                    <div class="slideshow-container1">
+                        <div class="mySlides1 fade">
+                            <div class="numbertext"><b>1 / 3</b></div>
+                            <img class="slide-picture" src="images/switch1.jpg" width=500px height=500px>
+                        </div>
+                        <div class="mySlides1 fade">
+                            <div class="numbertext"><b>2 / 3</b></div>
+                            <img class="slide-picture" src="images/switch3.png" width=500px height=500px>
+                        </div>
+                        <div class="mySlides1 fade">
+                            <div class="numbertext"><b>3 / 3</b></div>
+                            <img class="slide-picture" src="images/drop-down-bar.jpg" width=500px height=500px>
+                        </div>
+                    </div>
+                    <div class="personal-contribution-B">
+                        <p class="Part-B">Part B</p>
+                        <p class="contribution-title-B"><b>About</b></p>
+                        <p class="contribution-title-B-1" > 
+                            <b>Personal Contribution</b>
+                        </p>
+                        <p class="personal-content-B">
+                            Our website combines the history of World War I and the portraits of soldiers. 
+                            At the beginning I proposed the concept of an archives room or an exhibition hall, 
+                            putting the portrait of the soldier in the picture frame and hanging it in the background of the exhibition hall in the website. 
+                            After discussing with my classmates, I changed my original idea. Using an auto-rotating mode to showcase the soldier's portrait frame, 
+                            the dynamic effect is more cool. In the first attemp, my template was similar to the first one. 
+                            After showing the effect to the team members, I received feedback from everyone and made changes on this basis. 
+                            We think that the effect of the first type is that the two cards are at an angle of 90 degrees to the plane, 
+                            and the portrait of the soldier cannot be displayed well. So I designed the second rotation effect template.
+                            For drop-down menus, our web game is an immersive role-playing game. The mechanics of the game are that you can see the current user's personal information by clicking on the soldier's avatar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="section5-slide2"> 
+                <div class="wrap2">
+                    <div class="slideshow-container2">
+                        <div class="mySlides2 fade2">
+                            <div class="numbertext2"><b>1 / 6</b></div>
+                            <img class="slide-picture2" src="images/history1.png" width=500px height=500px>
+                        </div>
+                        <div class="mySlides2 fade2">
+                            <div class="numbertext2"><b>2 / 6</b></div>
+                            <img class="slide-picture2" src="images/history2.png" width=500px height=500px>
+                        </div>
+                        <div class="mySlides2 fade2">
+                            <div class="numbertext2"><b>3 / 6</b></div>
+                            <img class="slide-picture2" src="images/history3.png" width=500px height=500px>
+                        </div>
+                        <div class="mySlides2 fade2">
+                            <div class="numbertext2"><b>4 / 6</b></div>
+                            <img class="slide-picture2" src="images/rank.png" width=500px height=500px>
+                        </div>
+                        <div class="mySlides2 fade2">
+                            <div class="numbertext2"><b>5 / 6</b></div>
+                            <img class="slide-picture2" src="images/hat.png" width=500px height=500px>
+                        </div>
+                        <div class="mySlides2 fade2">
+                            <div class="numbertext2"><b>6 / 6</b></div>
+                            <img class="slide-picture2" src="images/switch2.png" width=500px height=500px>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-contribution-B-2">
+                    <p class="Part-B-2">Part B</p>
+                    <p class="contribution-title-B-2"><b>About</b></p>
+                    <p class="contribution-title-B-1-2" > 
+                        <b>Personal Contribution</b>
+                    </p>
+                    <p class="personal-content-B-2">
+                            For presentation and slide, I am mainly responsible for describing the change of web content and functionality from partA to partB. 
+                            After the first show, some students gave feedback to our webpage theme. 
+                            They believes that combining the portraits of soldiers with the history of World War I is a good idea, 
+                            but the scope of World War I history is too broad. It would be better to change the soldiers of World War I to the ANZAC Corps to narrow the scope. After accepting this suggestion, 
+                            I found the historical background of ANZAC through the Wekipedia and the Australian Legion Memorial, 
+                            and participated in the famous battles of World War I.
+                            In addition to the changes in the theme of the webpage, I have also organized other changes on our website. 
+                            First, due to the lack of technology, our web page has removed the ranking system. Second, 
+                            a hat icon is used in the lower left corner of the web page to allow the user to click to exit the game, 
+                            enhancing the interactivity of the web page. Third, I mentioned earlier that our soldier portrait is automatically rotated, 
+                            but in the subsequent user test, several users have reported to me that if they can click on them to rotate the portrait box, 
+                            it can increase the playability of the webpage. At the same time, they can better understand the portraits of soldiers in that era.
+                    </p>
+                </div>
+            </div>
+            <div class="slide"> 
+                <div class="personal-contribution-B-3">
+                    <p class="Part-B-3">Part B</p>
+                    <p class="contribution-title-B-3"><b>About</b></p>
+                    <p class="contribution-title-B-1-3" > 
+                        <b>Reflection</b>
+                    </p>
+                    <p class="personal-content-B-3">
+                            Many of the changes in partB are directly related to the final presentation of our team. 
+                            In the final trade show I saw a lot of the group's webpage and found that many of the groups used the game mode to display the data. 
+                            And, the ranking system has been added to the game. After talking with them, it was found that this ranking function is not an impossible function. 
+                            We thought that this function was difficult at the beginning of design, beyond our scope, and then gave up decisively
+                            rather than exploring and asking others.I hope that I can pay attention to this problem in my furture study.
+                            In the show of partB, the Soldier Portrait Gallery was recognized by the tutor and considered this feature to be very cool. 
+                            In addition, after narrowing down the topic of the webpage, we found that more historical information is available, 
+                            and the historical question and answer of the game mechanics is easier to be set up. As the theme changes, 
+                            we have narrowed the scope of the site’s audience. Using history enthusiasts replaces the original middle school students, which makes the audience goals are clearer.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section6">
+            <div class="wrap2">
+                <div class="slide" id="section6-slide1">
+                    <div class="slideshow-container6">
+                        <div class="mySlides6 fade6">
+                            <div class="numbertext6"><b>1 / 7</b></div>
+                            <img class="slide-picture6" src="images/box-1.png" width=500px height=500px>
+                        </div>
+                        <div class="mySlides6 fade6">
+                            <div class="numbertext6"><b>2 / 7</b></div>
+                            <img class="slide-picture6" src="images/box-2.png" width=500px height=500px>
+                        </div>
+                        <div class="mySlides6 fade6">
+                            <div class="numbertext6"><b>3 / 7</b></div>
+                            <img class="slide-picture6" src="images/box-3.png" width=500px height=500px>
+                        </div>
+                        <div class="mySlides6 fade6">
+                            <div class="numbertext6"><b>4 / 7</b></div>
+                            <img class="slide-picture6" src="images/box-4.png" width=500px height=500px>
+                        </div>
+                        <div class="mySlides6 fade6">
+                            <div class="numbertext6"><b>5 / 7</b></div>
+                            <img class="slide-picture6" src="images/switch4.png" width=500px height=500px>
+                        </div>
+                        <div class="mySlides6 fade2">
+                            <div class="numbertext6"><b>6 / 7</b></div>
+                            <img class="slide-picture6" src="images/title3.png" width=500px height=500px>
+                        </div>
+                        <div class="mySlides6 fade2">
+                            <div class="numbertext6"><b>7 / 7</b></div>
+                            <img class="slide-picture6" src="images/title4.png" width=500px height=500px>
+                        </div>
+                    </div>
+                    <div class="personal-contribution-C-1">
+                        <p class="Part-C-1">Part C</p>
+                        <p class="contribution-title-C"><b>About</b></p>
+                        <p class="contribution-title-C-1" > 
+                            <b>Personal Contribution</b>
+                        </p>
+                        <p class="personal-content-C">
+                                In the drop-down menu section of partC, through the Australian soldier rank system website(https://www.army.gov.au), 
+                                I replaced the upper part of the head with the rank, and the ranks continued to increase as the level increased. 
+                                At the same time, the user level is also upgraded as the number of questions is increased. 
+                                In the lower part of the drop-down menu, the original design is that the game provides a subordinate mechanism, 
+                                which means that when the user is promoted to a certain level, a new soldier avatar will appear, 
+                                and the maximum number of soldiers the user can have in the entire game is 5. After completing this design, 
+                                due to the overall integration of the webpage, my code in this part can't be well connected with the code of the classmates who wrote the answer mode. 
+                                So I deleted the function of the number of soldiers, and the quantity is directly set to 5.
+                                For the function of the Soldier's Exhibition Hall, due to the limited number of displays, 
+                                I used a toggle button instead of the original left and right switch to display the portrait of the soldier.
+                                In partB, we used flash to show the final title of each user. In partC, I implemented this function with code. 
+                                Through Jquery, the image showing the user's title appears slowly from top to bottom. At the same time, 
+                                when the user's title is completely displayed, the css animation adds a stamping effect from large to small.<br>
+                                In the report, I am mainly responsible for the changes made by our website from partB to partC based on the feedback from the classmates and the integration of the final report. 
+                                For the final trade show, my task is to introduce the web page to the user and tutor who experience our web page, 
+                                such as the purpose of the web page, what data is used, what is the interaction form of the data and web page, etc. .
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="section6-slide1">
+                <div class="wrap2">
+                    <p class="partC-tradeshow-word">Part C Trade Show</p>
+                    <div class="slideshow-container6-1">
+                        <div class="mySlides6-1">
+                            <img class="slide-picture6-1" src="images/trade-show1.jpg" width=400px height=400px>
+                        </div>
+                        <div class="mySlides6-1">
+                            <img class="slide-picture6-1" src="images/trade-show3.jpg" width=400px height=400px>
+                        </div>
+                        <div class="mySlides6-1">                  
+                            <img class="slide-picture6-1" src="images/trade-show2.jpg" width=400px height=400px>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" id="section6-slide2">
+                <div class="wrap3">
+                    <div class="personal-contribution-C-2">
+                        <p class="Part-C-2">Part C</p>
+                        <p class="contribution-title-C-2"><b>About</b></p>
+                        <p class="contribution-title-C-1-2" > 
+                            <b>Reflection</b>
+                        </p>
+                        <div class="personal-content-C-2">
+                            <p>
+                                In the process of completing this project, my team members and I are very careful and responsible. 
+                                Although there are still some shortcomings in this project, I think it is still successful overall.
+                                In the implementation phase of partC, we gave up a lot of the original design features. 
+                                For example, first, the background map of the web page should mark the location of the history where the history occurs, 
+                                as each historical question appears. Second,as the level of users increases, the number of subordinates increases. 
+                                Third, the user level is not downgraded because the user answers the wrong question. We unanimously believe that we are giving up these functions
+                                since we all think that we can't make real results. However, when I went to visit and experience other people's webpages in the final trade show, 
+                                I found that some groups had done very well. I am very impressed with two groups. The first group is a typing game. 
+                                Their web pages are not only very cool, but also very novel. The webpage provides the user with the content of typing, 
+                                and the speed of the music is adjusted according to the speed of the user's typing. The faster the user types, 
+                                the faster the music is. Finally there is a ranking for each user. The second group is a game similar to pockman, 
+                                which uses the map data to display Australian animals corresponding to different street scenes according to the user's location, 
+                                and the user can click on the animal to load it into the backpack. These two games give me a deeper understanding of interactivity.
+
+                            </p>
+                        </div>
+                        <div class="personal-content-C-2-1">
+                            <p>
+                                At the beginning of our design, our website game is ready to adopt the question-answer mode. 
+                                But when I saw the presentations of other groups on the trade show, I found that our thinking was too limited. 
+                                The game is a good way to let the web page interact with the user. Similarly, there are many modes of the game. 
+                                The two games I mentioned just may not be as difficult, but the two groups of students are good at innovation and pay more attention to how to make the data display in a novel way to attract users. 
+                                After asking them how to rank, I found out that we didn't understand how the database interact with the front-end . 
+                                The school provides us with a corresponding database platform and some interfaces. We did not make reasonable use of it, 
+                                and lacked communication with teachers and classmates in the process of completing the project, and did not get targeted help.
+                                In the process of completing the final project, our team leader focused on design, one classmate is responsible for PHP, 
+                                and the remaining two students are responsible for the code. However, we found that in the process of website integration, 
+                                we always have to constantly compress the code we wrote and send it to other students. 
+                                Then other student's laptop may have incompatibility problems with this part of the code. 
+                                Once there are minor bugs that need to be modified, they must correct them and send them to other team members. 
+                                During the trade show and other people's communication, I found that some groups used github to avoid the problems mentioned above. 
+                                I hope that I can learn github and use it myself in future Deco courses.I am very grateful to this course for learning a lot.
+                                Last year 7140 we focused on the aesthetic design of the web page and the use of basic html, css. 
+                                This year's 7180 let me know that a good web page is attractive enough both aesthetically and functionally. 
+                                At the same time, each website is inseparable from the data. How to use PHP to obtain data and update the data is the focus of my future study.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section7">
+            <span><p class="portfolio">Portfolio</p></span>
+            <span><p class="gallery">Gallery</p></span>
+            <div class="row1" >
+                <div class="column1" >
+                    <a href="images/drop-down-bar.jpg">
+                        <img src="images/drop-down-bar.jpg" width=200px height=150px>
+                    </a>
+                    <a href="images/box-2.png">
+                        <img src="images/box-2.png" width=200px height=150px>
+                    </a>
+                    <a href="images/box-4.png">
+                        <img src="images/box-4.png" width=200px height=150px>
+                    </a>
+                    <a href="images/history1.png">
+                        <img src="images/history1.png" width=200px>
+                    </a>
+                </div>
+                <div class="column1">
+                    <a href="images/personal.png">
+                        <img src="images/personal.png" width=200px>
+                    </a>
+                    <a href="images/story.png">
+                        <img src="images/story.png" width=200px>
+                    </a>
+                    <a href="images/poster.png">
+                        <img src="images/poster.png" width=200px height=200px>
+                    </a>
+                    <a href="images/history2.png">
+                        <img src="images/history2.png" width=200px>
+                    </a>
+                </div>
+                <div class="column1">
+                    <a href="images/trade-show1.jpg">
+                        <img src="images/trade-show1.jpg" width=200px>
+                    </a>
+                    <a href="images/trade-show2.jpg">
+                        <img src="images/trade-show2.jpg" width=200px height=200px>
+                    </a>
+                    <a href="images/trade-show3.jpg">
+                        <img src="images/trade-show3.jpg" width=200px>
+                    </a>
+                    <a href="images/title4.png">
+                        <img src="images/title4.png" width=200px>
+                    </a>
+                </div>
+
+                <div class="column1">
+                    <a href="images/switch4.png">
+                        <img src="images/switch4.png" width=200px>
+                    </a>
+                    <a href="images/week2-journal.png">
+                        <img src="images/week2-journal.png" width=200px height=200px>
+                    </a>
+                    <a href="images/history3.png">
+                        <img src="images/history3.png" width=200px> 
+                    </a>
+                    <a href="images/world-coffee.jpg">
+                        <img src="images/world-coffee.jpg" width=200px>
+                    </a>
+                </div>
+                <div class="column1">
+                    <a href="images/switch2.png" >
+                        <img src="images/switch2.png" width=200px>
+                    </a>
+                    <a href="images/switch1.jpg">
+                        <img src="images/switch1.jpg" width=200px>
+                    </a>
+                    <a href="images/week-journal2.png">
+                        <img src="images/week-journal2.png" width=200px>
+                    </a>
+                    <a href="images/coffee2.jpg">
+                        <img src="images/coffee2.jpg" width=200px> 
+                    </a>
+                </div>
+            </div>
+            <div class="reference">
+                <div class="reference-list">Reference List</div>
+                <!-- <p class="reference-list">Reference List</p> -->
+                <span class="first-reference">1.Eclipse of the moon(2018). Retrieved from https://unsplash.com/photos/IKKTUSxNNSI</span>
+                <span>2.Distractions Removed(2019). Retrieved from https://unsplash.com/photos/tgQbE_W7Gfs</span><br>
+                <span class="third-reference">3.Alvaro,T.(n.d.). fullPage. Retrieved from https://github.com/alvarotrigo/fullpage.js</span>
+                <span>4.scrollClass.js.(n.d.). Retrieved from  http://www.virgiliudiaconu.com/work/scroll-class</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
